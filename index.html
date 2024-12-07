@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>TODO LIST</h1>
+    </header>
+
+    <section class="container">
+      <div class="form-container">
+        <form class="todo-form">
+          <input type="text" class="todo-input" />
+          <button type="submit" class="todo-btn">
+            <i class="fas fa-plus-circle"></i>
+          </button>
+        </form>
+        <div class="select">
+          <select class="filter-todos">
+            <option value="all">all</option>
+            <option value="completed">comleted</option>
+            <option value="uncompleted">uncompleted</option>
+          </select>
+        </div>
+      </div>
+      <div class="todo-container">
+        <ul class="todolist">
+          <!-- <li class="todo">
+                <p class="todo__title">todo #1</p>
+                <span class="todo__createdAt">1402/01/01</span>
+                <button class="todo__check">
+                  <i class="far fa-check-square"></i>
+                </button>
+                <button class="todo__remove">
+                  <i class="far fa-trash-alt"></i>
+                </button>
+              </li> -->
+        </ul>
+      </div>
+    </section>
+    <div class="edit-todo hidden">
+      <div class="edit__header">
+        <h2>EDIT</h2>
+        <button class="close-edit">&times;</button>
+      </div>
+      <form class="edit-todo__form">
+        <label for="edit-todo__input">Enter your todo: </label>
+        <input type="text" class="edit-todo__input" />
+        <button class="edit-btn" type="submit">edit</button>
+      </form>
+    </div>
+    <div class="backdrop hidden"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>
